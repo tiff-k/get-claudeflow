@@ -56,7 +56,7 @@ try {
 console.log("  Installing dependencies...");
 console.log();
 try {
-  execSync("npm install", { cwd: targetDir, stdio: "inherit" });
+  execSync("npm install --audit=false --fund=false", { cwd: targetDir, stdio: "inherit" });
 } catch {
   console.log();
   console.log(dim("  npm install had issues — you can retry manually."));

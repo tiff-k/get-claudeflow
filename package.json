@@ -1,6 +1,6 @@
 {
   "name": "get-claudeflow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Set up the Flow Club Build Challenge — build and deploy a website with Claude Code",
   "bin": {
     "get-claudeflow": "./index.mjs"
