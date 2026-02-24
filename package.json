@@ -1,0 +1,23 @@
+{
+  "name": "get-claudeflow",
+  "version": "1.0.0",
+  "description": "Set up the Flow Club Build Challenge — build and deploy a website with Claude Code",
+  "bin": {
+    "get-claudeflow": "./index.mjs"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "flow-club",
+    "website-builder",
+    "beginner",
+    "nextjs",
+    "scaffolding"
+  ],
+  "author": "techtiffai",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiff-k/get-claudeflow"
+  }
+}
