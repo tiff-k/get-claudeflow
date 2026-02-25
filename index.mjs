@@ -4,8 +4,8 @@ import { execSync } from "child_process";
 import { existsSync, rmSync } from "fs";
 import { resolve, basename } from "path";
 
-const REPO = "https://github.com/tiff-k/flow-club-build-challenge.git";
-const DEFAULT_NAME = "flow-club-build-challenge";
+const REPO = "https://github.com/tiff-k/claudeflow.git";
+const DEFAULT_NAME = "claudeflow";
 
 const args = process.argv.slice(2);
 const projectName = args[0] || DEFAULT_NAME;
@@ -18,7 +18,7 @@ const cyan = (t) => `\x1b[36m${t}\x1b[0m`;
 const dim = (t) => `\x1b[2m${t}\x1b[0m`;
 
 console.log();
-console.log(bold("  Flow Club Build Challenge"));
+console.log(bold("  ClaudeFlow"));
 console.log(dim("  Build and deploy your own website with Claude Code"));
 console.log();
 
@@ -44,7 +44,7 @@ rmSync(resolve(targetDir, ".git"), { recursive: true, force: true });
 try {
   execSync("git init", { cwd: targetDir, stdio: "pipe" });
   execSync("git add -A", { cwd: targetDir, stdio: "pipe" });
-  execSync('git commit -m "Initial commit from Flow Club Build Challenge"', {
+  execSync('git commit -m "Initial commit from ClaudeFlow"', {
     cwd: targetDir,
     stdio: "pipe",
   });
@@ -71,7 +71,7 @@ console.log();
 console.log(`    ${cyan("cd")} ${projectName}`);
 console.log(`    ${cyan("npm run dev")}          ${dim("— start the dev server")}`);
 console.log(`    ${cyan("claude")}               ${dim("— open Claude Code")}`);
-console.log(`    ${cyan("/kickoff")}             ${dim("— start the challenge")}`);
+console.log(`    ${cyan("/kickoff")}             ${dim("— set up your project")}`);
 console.log();
 console.log(dim("  Happy building!"));
 console.log();
